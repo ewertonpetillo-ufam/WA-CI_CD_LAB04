@@ -54,7 +54,6 @@ jobs:
         with:
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           project_id: ${{ secrets.GCP_PROJECT_ID }}
-
       # gcloud configure docker
       - name: Configure Docker
         run: gcloud auth configure-docker --quiet
